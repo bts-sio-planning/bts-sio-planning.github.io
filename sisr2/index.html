@@ -700,7 +700,11 @@ function getMatieres() {
 		{ description: "", nom: "Bloc 6", nomlong: "Algorithmique appliquée", alias: "B6 algo", id: "14761", fond:"#FFFF99", svg: 7, devoir: 7, question: "2#TutoratIndividuel"},
 		{ description: "", nom: "Bloc 7", nomlong: "Culture économique, juridique et managériale", alias: "B7", id: "14770", fond:"#FFCC99", svg: 8, devoir: 10, question: "2#TutoratIndividuel"},
 		{ description: "", nom: "Ateliers de professionnalisation", alias: "AP", id: "14776", fond:"#CDE9E6", svg: 9, devoir: 6, question: "2#TutoratIndividuel"},
-		{ description: "", nom: "Stage en milieu professionnel", alias: "Stage", id: "12735", fond:"#BFBFBF", svg: 10, question: "8#Tutorat"},
+		{ description: "", nom: "Entrainement à l'épreuve E5", alias: "E5", id: "14762", fond:"#A5A5A5", devoir: 2},
+		{ description: "", nom: "Entrainement à l'épreuve E6", alias: "E6", id: "14774", fond:"#A5A5A5"},		
+		{ description: "", nom: "Entrainement à l'épreuve E7", alias: "E7", id: "14775", fond:"#A5A5A5", devoir: 2},
+		{ description: "", nom: "Stage en milieu professionnel", alias: "Stage", id: "12735", fond:"#BFBFBF", svg: 10, question: "8#Tutorat"}
+		
 	];		
 }
 
@@ -734,29 +738,28 @@ function getSequences() {
 		{ matiere: "B2", nom: "", nbsem:2},
 		{ matiere: "B2", competence: 3, nom: "B2.3 : Exploiter, dépanner et superviser une solution d’infrastructure réseau", nbsem:8, prerequis: "", quiz: 2, devoir: 2},
 
+		{ matiere: "B3", nom: "", nbsem:3},
+		{ matiere: "B3", competence: 5, idcompetence: 6, nom: "B3.5-SQ1-2-3-4-5", nbsem:10, prerequis: "", quiz: 1, devoir: 1},
 		{ matiere: "B3", nom: "", nbsem:2},
-		{ matiere: "B3", competence: 5, idcompetence: 6, nom: "B3.5-SQ1", nbsem:3, prerequis: "", quiz: 1},
-		{ matiere: "B3", competence: 5, idcompetence: 6, nom: "B3.5-SQ2", nbsem:4, prerequis: "B3.5-SQ1"},
-		{ matiere: "B3", competence: 5, idcompetence: 6, nom: "B3.5-SQ3", nbsem:4, prerequis: "B3.5-SQ2", devoir: 1},
-		{ matiere: "B3", competence: 5, idcompetence: 6, nom: "B3.5-SQ4", nbsem:2, prerequis: "B3.5-SQ3", devoir: 2},
+		{ matiere: "B3", competence: 5, idcompetence: 6, nom: "B3.5-SQ6-7-8-9-10", nbsem:8, prerequis: "", devoir: 2},
 		
 		{ matiere: "B4", competence: 1, nom: "Activité 1 : Cerner le thème et ses enjeux", nbsem:3, prerequis: ""},
 		{ matiere: "B4", nom: "", nbsem:1},
 		{ matiere: "B4", competence: 2, nom: "Activité 2 : Les animaux et nous dans les mythes et bestiaires", nbsem:3, prerequis: "", quiz: 1},
 		{ matiere: "B4", nom: "", nbsem:1},
-		{ matiere: "B4", competence: 3, nom: "Activité 3", nbsem:3, prerequis: ""},
+		{ matiere: "B4", competence: 3, nom: "Activité 3 : Fables, fabiaux, contes et noms d'oiseaux", nbsem:3, prerequis: ""},
 		{ matiere: "B4", nom: "", nbsem:1},
 		{ matiere: "B4", competence: 4, nom: "Activité 4", nbsem:3, prerequis: ""},
 		{ matiere: "B4", nom: "", nbsem:1},
 		{ matiere: "B4", competence: 5, nom: "Activité 5", nbsem:3, prerequis: "", devoir: 1},
 		{ matiere: "B4", nom: "", nbsem:1},
-		{ matiere: "B4", competence: 6, nom: "Activité 6", nbsem:2, prerequis: ""},
-		{ matiere: "B4", competence: 7, nom: "Activité 7", nbsem:2, prerequis: "", quiz: 2},
-		{ matiere: "B4", competence: -1, nom: "Séquence 2", nbsem:1, prerequis: "", devoir: 2},
+		{ matiere: "B4", competence: 6, nom: "Activité 6", nbsem:2.5, prerequis: ""},
+		{ matiere: "B4", competence: 7, nom: "Activité 7", nbsem:2.5, prerequis: "", quiz: 2},
+		{ matiere: "B4", nom: "", nbsem:1},
+		{ matiere: "B4", competence: -1, nom: "Séquence 2", nbsem:3, prerequis: "", devoir: 2},
 
-		{ matiere: "B5", competence: 1, nom: "27h", nbsem:9, prerequis: "", devoir: 1},
-		{ matiere: "B5", nom: "", nbsem:8},
-		{ matiere: "B5", competence: 1, nom: "21h", nbsem:7, prerequis: "", devoir: 2},
+		{ matiere: "B5", competence: 1, nom: "Etude en continu (48h/année)", nbsem:9, prerequis: "", devoir: 1},
+		{ matiere: "B5", competence: 1, nom: " ", nbsem:17, prerequis: "", devoir: 2},
 
 		{ matiere: "B6 math", nom: "", nbsem:4},
 		{ matiere: "B6 math", competence: 4, nom: "Séquence 4 : Arithmétique – Partie I", nbsem:4.5, prerequis: ""},
@@ -779,6 +782,15 @@ function getSequences() {
 		{ matiere: "AP", nom: "", nbsem:4},
 		{ matiere: "AP", competence: 2, nom: "Atelier 2", nbsem:7, prerequis: "", devoir: 1},
 		{ matiere: "AP", competence: 3, nom: "Ateliers 3/4", nbsem:7, prerequis: "", devoir: 2},
+		
+		{ matiere: "E5", nom: "", nbsem:27},
+		{ matiere: "E5", competence: 0, nom: " ", nbsem:2, prerequis: "", devoir: 1},
+		
+		{ matiere: "E6", nom: "", nbsem:28},
+		{ matiere: "E6", competence: 0, nom: " ", nbsem:2, prerequis: ""},			
+
+		{ matiere: "E7", nom: "", nbsem:26},
+		{ matiere: "E7", competence: 0, nom: " ", nbsem:2, prerequis: "", devoir: 1},
 		
 		{ matiere: "Stage", competence: -1, nom: "Stage - période possible", nbsem:29, prerequis: ""},
 	];	
